@@ -3,6 +3,9 @@
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   display: flex;
   justify-content: center;
@@ -12,6 +15,8 @@ body {
   width: 100%;
   padding: 0 50px;
   box-sizing: border-box;
+  min-width: 1024px;
+  max-width: 1440px;
 }
 .header {
   height: 80px;
@@ -22,7 +27,7 @@ body {
 .logo {
   width: 60px;
   height: 20px;
-  padding: 20px 40px;
+  padding: 20px 5px;
 }
 .header-nav {
   display: flex;
@@ -36,7 +41,7 @@ body {
   color: black;
   padding-top: 12px;
 }
-.active {
+.header-link:hover {
   border-top: 2px solid rgb(57, 57, 221);
   color: rgb(57, 57, 221);
 }
@@ -62,10 +67,13 @@ body {
   flex-direction: row;
   gap: 0;
 }
+#location-icon {
+  color: black;
+}
 .location {
   padding: 8px 12px;
   border-radius: 10px 0 0 10px;
-  background-color: rgb(231, 230, 230);
+  background-color: #f2f2f2;
 }
 .location-text {
   border: 0;
@@ -102,7 +110,7 @@ body {
   gap: 4px;
 }
 .font-icon {
-  color: rgb(51, 115, 193);
+  color: #0065fc;
   margin: 8px;
   margin-left: 1px;
   font-size: 20px;
@@ -133,6 +141,7 @@ button:hover {
 .accommodation-and-popular {
   display: flex;
   justify-content: space-between;
+  margin-top: 35px;
 }
 .accommodation-and-popular section {
   background-color: #f2f2f2;
@@ -175,6 +184,8 @@ root {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
+  text-decoration: none;
+  color: black;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -215,6 +226,8 @@ root {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  text-decoration: none;
+  color: black;
 }
 .paris-card img {
   width: 100%;
@@ -260,6 +273,8 @@ root {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 .popular-cards .card {
@@ -294,4 +309,66 @@ root {
 
 .popular-cards .card-rating {
   margin-bottom: 5px;
+}
+
+.things-to-do-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+  width: 100%;
+
+  background: none;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.things-to-do {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+.things-to-do-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  text-decoration: none;
+  color: black;
+}
+.to-do-img {
+  width: 100%;
+  object-fit: cover;
+  height: 20rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.things-to-do-card-text {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+}
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
 }

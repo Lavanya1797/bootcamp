@@ -26,8 +26,8 @@
         <img class="logo" src="./images/logo/Booki.png" alt="logo" />
 
         <nav class="header-nav">
-          <a class="header-link active" href="#">Accommodation</a>
-          <a class="header-link" href="#">Things to do</a>
+          <a class="header-link" href="#accommodation-section">Accommodation</a>
+          <a class="header-link" href="#things-to-do-section">Things to do</a>
         </nav>
       </header>
       <main class="main">
@@ -40,7 +40,7 @@
           </div>
           <form class="search">
             <span class="location">
-              <i class="fa-solid fa-location-dot"></i>
+              <i class="fa-solid fa-location-dot" id="location-icon"></i>
             </span>
             <input
               class="location-text"
@@ -65,18 +65,18 @@
               <i class="fa-solid fa-fire font-icon"></i>Our top picks
             </button>
           </section>
-          <section class="info-flex">
+          <div class="info-flex">
             <i class="fa-solid fa-info circle"></i>
             <p class="paragraph">
               There are over 500 accomodation options in this city
             </p>
-          </section>
+          </div>
         </section>
-        <section class="accommodation-and-popular">
+        <div id="accommodation-section" class="accommodation-and-popular">
           <section class="accommodation">
-            <h2 class="section-title">Paris accomodation</h2>
+            <h2 class="section-title">Paris accommodation</h2>
             <div class="accommodation-cards">
-              <article class="paris-card">
+              <a href="#" class="paris-card">
                 <img
                   src="./images/accommodation/fred-kleber.jpg"
                   alt="Image of the hotel room showing bed"
@@ -97,8 +97,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="paris-card">
+              </a>
+              <a href="#" class="paris-card">
                 <img
                   src="./images/accommodation/febrian-zakaria.jpg"
                   alt="Image of the hotel room showing bed"
@@ -119,8 +119,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="paris-card">
+              </a>
+              <a href="#" class="paris-card">
                 <img
                   src="./images/accommodation/reisetopia.jpg"
                   alt="Image of the hotel room showing bed"
@@ -141,8 +141,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="paris-card">
+              </a>
+              <a href="#" class="paris-card">
                 <img
                   src="./images/accommodation/annie-spratt.jpg"
                   alt="Image of the hotel room showing bed"
@@ -163,8 +163,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="paris-card">
+              </a>
+              <a href="#" class="paris-card">
                 <img
                   src="./images/accommodation/marcus-loke.jpg"
                   alt="Image of the hotel room showing bed"
@@ -185,8 +185,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="paris-card">
+              </a>
+              <a href="#" class="paris-card">
                 <img
                   src="./images/accommodation/nicate-lee.jpg"
                   alt="Image of the hotel room showing bed"
@@ -207,18 +207,18 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
+              </a>
             </div>
             <a href="#" class="show-more">Show more</a>
           </section>
           <section class="popular">
-            <div class="popular-title">
+            <a href="#" class="popular-title">
               <h2 class="section-title">Most popular</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-            </div>
+            </a>
 
             <div class="popular-cards">
-              <article class="card">
+              <a href="#" class="card">
                 <img
                   src="./images/accommodation/emile-guillemot.jpg"
                   alt="Image of hotel room showing bed"
@@ -239,8 +239,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="card">
+              </a>
+              <a href="#" class="card">
                 <img
                   src="./images/accommodation/aw-creative.jpg"
                   alt="Image of hotel room showing bed"
@@ -263,8 +263,8 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
-              <article class="card">
+              </a>
+              <a href="#" class="card">
                 <img
                   src="./images/accommodation/febrian-zakaria2.jpg"
                   alt="Image of hotel room showing bed"
@@ -285,11 +285,66 @@
                     <span class="sr-only">Rated 4 out of 5</span>
                   </div>
                 </div>
-              </article>
+              </a>
             </div>
           </section>
-        </section>
+        </div>
       </main>
+      <section id="things-to-do-section" class="things-to-do-section">
+        <h2 class="section-title">Things to do in Paris</h2>
+        <div class="things-to-do">
+          <a href="#" class="things-to-do-card">
+            <img
+              class="to-do-img"
+              src="./images/things-to-do/eiffel-tower.jpg"
+              alt="The Eiffel Tower image"
+            />
+            <h2 class="things-to-do-card-text">The Eiffel Tower</h2>
+          </a>
+          <a href="#" class="things-to-do-card">
+            <img
+              class="to-do-img"
+              src="./images/things-to-do/montmarte.jpg"
+              alt="Montmartre image"
+            />
+            <h2 class="things-to-do-card-text">Montmartre</h2>
+          </a>
+          <a href="#" class="things-to-do-card">
+            <img
+              class="to-do-img"
+              src="./images/things-to-do/the-louvre.jpg"
+              alt="The Louvre image"
+            />
+            <h2 class="things-to-do-card-text">The Louvre</h2>
+          </a>
+          <a href="#" class="things-to-do-card">
+            <img
+              class="to-do-img"
+              src="./images/things-to-do/notre-dame-de-paris.jpg"
+              alt="Notre-dame-de-paris image"
+            />
+            <h2 class="things-to-do-card-text">Notre-dame-de-paris</h2>
+          </a>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-sections">
+          <h2 class="footer-title">About</h2>
+          <p class="paragraph">How it works</p>
+          <p class="paragraph">Terms and conditions</p>
+          <p class="paragraph">Data and privacy</p>
+        </div>
+        <div class="footer-sections">
+          <h2 class="footer-title">Our accommodation</h2>
+          <p class="paragraph">Our quality promise</p>
+          <p class="paragraph">Add your hotel</p>
+        </div>
+        <div class="footer-sections">
+          <h2 class="footer-title">Support</h2>
+          <p class="paragraph">Help center</p>
+          <p class="paragraph">Contact us</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
