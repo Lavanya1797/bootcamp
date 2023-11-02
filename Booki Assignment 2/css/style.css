@@ -1,0 +1,297 @@
+/****** General ***********/
+* {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.header {
+  height: 80px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+  height: 20px;
+  padding: 20px 40px;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 68px;
+  padding: 0 50px;
+}
+.header-link {
+  text-decoration: none;
+  color: black;
+  padding-top: 12px;
+}
+.active {
+  border-top: 2px solid rgb(57, 57, 221);
+  color: rgb(57, 57, 221);
+}
+/*.main {
+  padding: 0px 40px;
+}*/
+.main-container-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 20px;
+}
+.paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+.location {
+  padding: 8px 12px;
+  border-radius: 10px 0 0 10px;
+  background-color: rgb(231, 230, 230);
+}
+.location-text {
+  border: 0;
+  border-top: 2px solid rgb(231, 230, 230);
+  border-bottom: 2px solid rgb(231, 230, 230);
+}
+.submit {
+  background-color: rgb(67, 146, 244);
+  color: white;
+  border-radius: 0 10px 10px 0px;
+  padding: 8px 12px;
+  border-color: rgb(67, 146, 244);
+  border: 0;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.filter-text {
+  font-size: 18px;
+  font-weight: 700;
+  align-items: center;
+}
+.filter-class {
+  border-radius: 25px;
+  background: none;
+  padding: 4px 12px;
+  border: 2px solid rgb(231, 230, 230);
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.font-icon {
+  color: rgb(51, 115, 193);
+  margin: 8px;
+  margin-left: 1px;
+  font-size: 20px;
+}
+button:hover {
+  background: lightblue;
+  border-color: rgb(188, 187, 187);
+}
+.info-flex {
+  display: flex;
+  gap: 10px;
+}
+.circle {
+  color: rgb(51, 115, 193);
+  margin: 4px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid grey;
+
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accommodation-and-popular {
+  display: flex;
+  justify-content: space-between;
+}
+.accommodation-and-popular section {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+root {
+  --main-color: #0065fc;
+}
+:root {
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+}
+
+.fa-solid,
+.fa-regular {
+  color: var(--main-color);
+}
+
+/*body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}*/
+
+.section-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutralStar {
+  color: var(--main-bg-color);
+}
+
+.accommodation {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+.accommodation-cards {
+  display: flex;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+.paris-card {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.paris-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 124px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.paris-card .accomodation-card-content {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.paris-card .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.paris-card .card-subtitle {
+  margin: 0;
+}
+
+.paris-card .card-rating {
+  margin-bottom: 5px;
+}
+
+.show-more {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+
+.popular {
+  width: 32%;
+}
+
+.popular-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.popular-cards img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.popular-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.popular-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.popular-cards .card-subtitle {
+  margin: 0;
+}
+
+.popular-cards .card-rating {
+  margin-bottom: 5px;
+}
