@@ -55,8 +55,8 @@ body {
   padding-top: 12px;
 }
 .header-link:hover {
-  border-top: 2px solid rgb(57, 57, 221);
-  color: rgb(57, 57, 221);
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
 
 .main-container-1 {
@@ -92,11 +92,11 @@ body {
   border-bottom: 2px solid rgb(231, 230, 230);
 }
 .submit {
-  background-color: rgb(67, 146, 244);
+  background-color: #0065fc;
   color: white;
   border-radius: 0 10px 10px 0px;
   padding: 8px 12px;
-  border-color: rgb(67, 146, 244);
+  border-color: #0065fc;
   border: 0;
 }
 .filter {
@@ -157,7 +157,7 @@ button:hover {
 .accommodation-and-popular section {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -204,7 +204,7 @@ button:hover {
   flex-wrap: wrap;
 }
 .paris-card {
-  width: 230px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   margin-top: 33px;
