@@ -6,15 +6,20 @@
 }
 .restaurant-img {
   width: 100%;
+  height: 350px;
   position: relative;
+}
+main {
+  display: flex;
+  flex-direction: column;
 }
 .main-content {
   background-color: $background-color;
   width: 100%;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  position: absolute;
-  top: 250px;
+  margin-top: -85px;
+  z-index: 1;
   .main-header {
     display: flex;
     justify-content: space-between;
@@ -53,7 +58,45 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .content {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+
     margin-top: 25px;
     padding: 15px;
     display: flex;
@@ -123,6 +166,24 @@
     }
   }
 }
+.starters {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  transition-delay: 1s;
+}
+.mains {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  transition-delay: 2.5s;
+}
+.desserts {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  transition-delay: 4s;
+}
 .button {
   margin: 25px 80px;
   width: 200px;
@@ -179,19 +240,6 @@
       }
       .ingredient {
         justify-content: space-between;
-      }
-    }
-
-    .footer-section {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 20px;
-      align-items: center;
-      padding-right: 40px;
-      padding-top: 40px;
-      .footer-link {
-        flex-direction: row;
-        gap: 20px;
       }
     }
   }
